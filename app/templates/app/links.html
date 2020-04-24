@@ -1,0 +1,12 @@
+﻿{%extends "app/layout.html"%}
+
+{%block content%}
+{%load staticfiles %}
+
+<h2>{{title}}.</h2>
+<h3>{{message}}</h3>
+<table>
+    <tr><th><a href="https://pskovatmosfera.ru/" target="_blank"><img src="{%static 'app/content/logo1.png'%}" width="400px"</a></th><th><a href="https://www.slavtour.ru/" target="_blank"><img src="{%static 'app/content/logo2.png'%}" width="400px"</a></th><th><a href="https://pskovcontinent.ru/" target="_blank"><img src="{%static 'app/content/logo3.jpg'%}" width="400px"</a></th></tr>
+</table>
+
+{%endblock%}

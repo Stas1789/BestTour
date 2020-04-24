@@ -1,0 +1,107 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+{% load staticfiles %}
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+
+    <ol class="carousel-indicators">
+
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+
+        <div class="item active">
+
+            <img src="{% static 'app/content/banner1.jpg'%} "  width="1400px"  class="img-responsive" />
+
+            <div class="carousel-caption" role="option">
+
+                <p>
+
+                   По распоряжению ФСБ, поручено временно ограничить въезд на территорию страны иностранных граждан с 18 марта по 1 мая 2020 года
+
+                   
+
+                </p>
+                <p><a class="btn btn-default" href="https://tass.ru/obschestvo/7996543">
+
+                        Читать далее!
+
+                    </a></p>
+
+            </div>
+
+        </div>
+
+        <div class="item">
+
+            <img src="{% static 'app/content/banner2.jpg'%}" width="1200px"  class="img-responsive" />
+
+            <div class="carousel-caption" role="option">
+
+                <p>
+
+                    35 лучших виртуальных музеев мира, которые необходимо посетить.
+                  
+
+                </p>
+                <p><a class="btn btn-default" href="https://www.canva.com/ru_ru/obuchenie/virtualnye-ekskursii/">
+
+                        Узнать подробнее
+
+                    </a></p>
+
+            </div>
+
+        </div>
+
+        <div class="item">
+
+            <img src=" {% static 'app/content/banner3.jpg'%} "  width="1300px"  class="img-responsive" />
+
+            <div class="carousel-caption" role="option">
+
+                <p>
+
+                     ВИРТУАЛЬНЫЕ ПРОГУЛКИ!!
+       
+
+                </p>
+                <p><a class="btn btn-default" href="https://www.culture.ru/s/virtualnye-progulki/">
+
+                        Поехали!
+
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+
+        <span class="sr-only">Previous</span>
+
+    </a>
+
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+
+        <span class="sr-only">Next</span>
+
+    </a>
+
+</div>
+{%endblock%}
