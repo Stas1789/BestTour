@@ -41,7 +41,7 @@ class Comment(models.Model):
     post = models.ForeignKey(Blog, on_delete = models.CASCADE, verbose_name= "Статья")
     
 
-    def _str_(self):
+    def __str__(self):
         return 'Комментарий %s к %s' % (self.author, self.post)
 
     class Meta:
