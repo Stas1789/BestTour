@@ -1,6 +1,7 @@
 body {
     padding-top: 100px;
     padding-bottom: 20px;
+    background: url(fon.jpg) no-repeat center top / cover;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -44,19 +45,36 @@ h5 {
     color: peru;
   
 }
-.navbar-inverse{
-    font-size : 13px;
-    text-transform : uppercase;
-    
+.navbar-inverse {
+    background-color:none;
+    border:none;
+    font-size: 13px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to top,rgba(0,0,0,0.001) 0,rgba(2,2,2,0.6) 50%);
 }
-.navbar-nav{
-    margin-top:auto;
-    margin-bottom:auto;
-    margin-left:auto;
-    margin-right:auto;
-    padding-top:10px;
-}
+
 .navbar-brand {
     font-size: 13px;
     font-weight: bold;
+    border-radius:50%;
+}
+
+.navbar-brand img {
+   
+    border-radius: 50%;
+}
+#myCarousel {
+    margin-top: 50px;
+    border: 2px solid white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+.nav > li > a{
+    padding:10px 10px;
+}
+.navbar-nav{
+    padding-top:20px;
+}
+.btn-blog {
+    border-radius: 50%;
+    padding: 5px;
 }

@@ -24,6 +24,74 @@
     <label for="{{ form.message.id_for_label}}">{{form.message.label}}:</label>
     {{form.message}}<br><br>
     <input type="submit" value="Отправить" >
+        <script>
+                    function field_name()   {
+                    $('#id_name').css('background-color','#9eebff');
+                    }
+                    function field_name2()  {
+                    $('#id_name').css('background-color','white');
+                    }
+                    function field_city()   {
+                    $('#id_city').css('background-color','#9eebff');
+                    }
+                    function field_city2()  {
+                    $('#id_city').css('background-color','white');
+                    }
+                    function field_job()    {
+                    $('#id_job').css('background-color','#9eebff');
+                    }
+                    function field_job2()   {
+                    $('#id_job').css('background-color','white');
+                    }
+                    function field_poezdki()  {
+                    $('#id_poezdki').css('background-color', '#9eebff');
+                    }
+                    function field_poezdki2() {
+                    $('#id_poezdki').css('background-color', 'white');
+                    }
+                    function field_istohnik()  {
+                    $('#id_istohnik').css('background-color', '#9eebff');
+                    }
+                    function field_istohnik2() {
+                    $('#id_istohnik').css('background-color', 'white');
+                    }
+                    function field_notice() {
+                    $('#id_notice').css('background-color', '#9eebff');
+                    }
+                    function field_notice2()    {
+                    $('#id_notice').css('background-color', 'white');
+                    }
+                    function field_email()  {
+                    $('#id_email').css('background-color', '#9eebff');
+                    }
+                    function field_email2() {
+                    $('#id_email').css('background-color', 'white');
+                    }
+                    function field_message()    {
+                    $('#id_message').css('background-color','#9eebff');
+                    }
+                    function field_message2()   {
+                    $('#id_message').css('background-color','white');
+                    }
+
+        
+                    $('#id_name').focus(field_name);
+                    $('#id_name').blur(field_name2);
+                    $('#id_city').focus(field_city);
+                    $('#id_city').blur(field_city2);
+                    $('#id_job').focus(field_job);
+                    $('#id_job').blur(field_job2);
+                    $('#id_poezdki').focus(field_poezdki);
+                    $('#id_poezdki').blur(field_poezdki2);
+                    $('#id_istohnik').focus(field_istohnik);
+                    $('#id_istohnik').blur(field_istohnik2);
+                    $('#id_notice').focus(field_notice);
+                    $('#id_notice').blur(field_notice2);
+                    $('#id_email').focus(field_email);
+                    $('#id_email').blur(field_email2);
+                    $('#id_message').focus(field_message);
+                    $('#id_message').blur(field_message2);
+                </script>
     </form>
 </div>
 {% else %}
