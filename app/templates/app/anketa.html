@@ -1,7 +1,7 @@
 ﻿{%extends "app/layout.html"%}
 {%block content%}
 {% if form != None %}
-<br><h2>Заполните и отправьте анкету</h2><br />
+<br><h2>Ответьте на несколько вопросов: </h2><br />
 <div>
     <form method="post">
     {% csrf_token %}
@@ -27,8 +27,8 @@
     </form>
 </div>
 {% else %}
- <br><h2>Благодарим за предоставленную информацию!</h2>
-<h3>Вы сообщили о себе следующее:</h3>
+ <br><h2>Спасибо,что помогаете стать нам лучше!!</h2>
+<h3>Ваши ответы:</h3>
 <ul>
     <li><span>Имя:</span>{{data.name}}</li>
     <li><span>Город:</span>{{data.city}}</li>

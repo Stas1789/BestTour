@@ -1,9 +1,9 @@
 ﻿{% extends "app/layout.html" %}
 
 {% block content %}
+{%load staticfiles %}
 
 <h2>{{ title }}.</h2>
-<h3>{{ message }}</h3>
 
 <p>Турфирма "BEST-TOUR" предлагает отдых за <br>
     рубежом,в России и странах СНГ по доступным ценам.<br> 
@@ -26,5 +26,8 @@
     </ul>
 
     <b><em>Отдыхайте с удовольствием!</em></b></p>
+<br />
+<a><img src="{%static 'app/content/about.jpg'%}" width="800px" </a>
+
 
 {% endblock %}

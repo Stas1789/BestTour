@@ -44,3 +44,19 @@ h5 {
     color: peru;
   
 }
+.navbar-inverse{
+    font-size : 13px;
+    text-transform : uppercase;
+    
+}
+.navbar-nav{
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:10px;
+}
+.navbar-brand {
+    font-size: 13px;
+    font-weight: bold;
+}

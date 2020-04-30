@@ -59,7 +59,6 @@ def links(request):
         'app/links.html',
         {
             'title':'Полезные ресурсы',
-            'message':'Похожие сайты.',
             'year':datetime.now().year,
         }
     )
